@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag anushibin007/tomcat-jre11-openjdk-ssl:latest
     - name: Push the Docker image
-      run: docker login -u anushibin007 -p ${{ sercrets.DOCKER_TOKEN }} && docker push anushibin007/tomcat-jre11-openjdk-ssl:latest
+      run: docker login -u anushibin007 -p ${{ secrets.DOCKER_TOKEN }} && docker push anushibin007/tomcat-jre11-openjdk-ssl:latest
