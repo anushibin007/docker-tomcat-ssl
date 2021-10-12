@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:jre11-openjdk
 
 RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
 
